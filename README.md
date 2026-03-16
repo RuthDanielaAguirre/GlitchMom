@@ -34,7 +34,7 @@ Cada episodio es una invitación a conectar, reír, compartir y descubrir que no
 
 
 <p align="center">
-  <img src="public/GlitchMomH.png" alt="Podcast" width="300"/>
+  <img src="public/GlitchMomH.png" alt="Podcast" width="500"/>
 
 </p>
 
