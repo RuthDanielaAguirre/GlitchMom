@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/glitchmom-banner.png" alt="GlitchMom Banner" width="600"/>
+  <img src="public/GlitchMomLogo.png" alt="GlitchMom Banner" width="600"/>
 </p>
 
 <p align="center">
