@@ -5,9 +5,9 @@ function Navbar() {
   const { theme, toggle } = useTheme()
 
   return (
-    <nav className="flex items-center justify-between px-8 py-5 sticky top-0 z-50  bg-(--bg)">
+    <nav className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 py-5 sticky top-0 z-50 bg-(--bg)">
       
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 mb-2 sm:mb-0">
         <NavLink to="/" className="text-xl font-bold text-(--text) no-underline tracking-tight">
           Glitch Mom
         </NavLink>
@@ -16,7 +16,7 @@ function Navbar() {
         </span>
       </div>
 
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
         <NavLink
           to="/episodes"
           className={({ isActive }) =>

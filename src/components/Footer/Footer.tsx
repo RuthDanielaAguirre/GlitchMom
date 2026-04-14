@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className="border-t border-(--text-muted) bg-(--bg) px-8 py-10 mt-auto">
+    <footer className="border-t border-(--text-muted) bg-(--bg) px-4 sm:px-8 py-10 mt-auto">
       
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-8">
         <div className="flex flex-col gap-2">
           <span className="text-xl font-bold text-(--text) tracking-tight">
             Glitch Mom
@@ -14,7 +14,7 @@ function Footer() {
           </span>
         </div>
 
-        <div className="flex gap-12">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
           <div className="flex flex-col gap-3">
             <span className="text-xs text-(--terra) tracking-widest uppercase opacity-70">
               navegar
@@ -36,7 +36,7 @@ function Footer() {
         <span>// todos los derechos reservados</span>
       </div>
 
-      <div className="flex items-center justify-between mt-3">
+      <div className="flex flex-col sm:flex-row items-center justify-between mt-3 gap-2 sm:gap-0">
         <span className="text-sm text-(--links) tracking-wider">
           GlitchMom.fm {new Date().getFullYear()}  
         </span>

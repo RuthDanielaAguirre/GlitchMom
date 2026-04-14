@@ -27,9 +27,9 @@ function Contact() {
   }
 
   return (
-    <main className="min-h-screen bg-(--bg) px-8 py-16">
+    <main className="min-h-screen bg-(--bg) px-4 sm:px-8 py-16">
 
-      <div className="max-w-xl">
+      <div className="max-w-xl w-full">
         <span className="tag mb-4 block">// contacto</span>
         <h1 className="text-4xl font-bold text-(--text) tracking-tight mb-4">
           ¿Te has sentido así?
@@ -99,7 +99,7 @@ function Contact() {
             <input
               {...register('recording')}
               placeholder="https://enlace-a-tu-grabacion.com"
-              className="input-field border rounded-md p-2 border text-(--links)"
+              className="input-field border rounded-md p-2 text-(--links)"
             />
             {errors.recording && (
               <span className="text-xs text-(--terra) opacity-70">{errors.recording.message}</span>

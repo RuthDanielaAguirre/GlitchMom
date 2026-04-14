@@ -1,10 +1,12 @@
 import { episodes } from '../constants/episodes'
 import TiltedCard from '../components/TiltedCard/TiltedCard'
+import { usePlayer } from '../context/PlayerContext'
 
 
 function Episodes() {
+  const { playEpisode } = usePlayer()
   return (
-    <main className="min-h-screen bg-(--bg) px-8 py-16">
+    <main className="min-h-screen bg-(--bg) px-4 sm:px-8 py-16">
 
       <div className="mb-12">
         <span className="tag mb-4 block">// archivo completo</span>
@@ -21,14 +23,14 @@ function Episodes() {
         <span>// el sistema no me esperaba</span>
       </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
  
 {episodes.map(episode => (
   <TiltedCard
     key={episode.id}
     coverImage={episode.coverImage ?? '/GlitchMomLogo.png'}
     captionText={episode.title}
-    onClick={() => console.log('abrir episodio', episode.id)}
+    onClick={() => playEpisode(episode)}
   />
 ))}
 

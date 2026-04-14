@@ -55,8 +55,8 @@ function TiltedCard({
     <figure
       ref={ref}
       onClick={onClick}
-      className="relative w-full h-full flex flex-col items-center justify-center [perspective:800px] cursor-pointer"
-      style={{ height: containerHeight, width: containerWidth }}
+      className="relative w-full h-full flex flex-col items-center justify-center perspective-midrange cursor-pointer"
+      style={{ height: containerHeight, width: containerWidth, maxWidth: '420px', minWidth: '220px' }}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -68,13 +68,13 @@ function TiltedCard({
       )}
 
       <motion.div
-        className="relative w-full h-full [transform-style:preserve-3d]"
+        className="relative w-full h-full transform-3d"
         style={{ width: imageWidth, height: imageHeight, rotateX, rotateY, scale }}
       >
         <motion.img
           src={coverImage}
           alt={altText}
-          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+          className="absolute inset-0 w-full h-full object-cover will-change-transform rounded-xl"
           style={{ transform: 'translateZ(0px)' }}
         />
 
@@ -90,6 +90,23 @@ function TiltedCard({
           </span>
         </motion.div>
       </motion.div>
+      {/* Responsive: mostrar advertencia en móvil, ajustar tamaño */}
+      <style>{`
+        @media (max-width: 640px) {
+          figure {
+            min-width: 90vw !important;
+            max-width: 98vw !important;
+            height: 220px !important;
+          }
+        }
+        @media (min-width: 641px) and (max-width: 1024px) {
+          figure {
+            min-width: 320px !important;
+            max-width: 420px !important;
+            height: 260px !important;
+          }
+        }
+      `}</style>
     </figure>
   )
 }
