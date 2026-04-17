@@ -28,6 +28,9 @@ function Footer() {
             <NavLink to="/contact" className="text-sm font-light text-(--links) no-underline hover:text-(--terra) transition-colors">
               contacto
             </NavLink>
+            <NavLink to="/accessibility" className="text-sm font-light text-(--links) no-underline hover:text-(--terra) transition-colors">
+              accesibilidad
+            </NavLink>
           </div>
         </div>
       </div>

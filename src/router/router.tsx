@@ -4,6 +4,7 @@ import Layout from '../layout/Layout'
 import Home from '../pages/Home'
 import Episodes from '../pages/Episodes'
 import Contact from '../pages/Contact'
+import Accessibility from '../pages/Accessibility'
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
     children: [     
     { path: "/", element: <Home /> },
     { path: "/episodes", element: <Episodes /> },
-    { path: "/contact", element: <Contact /> }
+    { path: "/contact", element: <Contact /> },
+    { path: "/accessibility", element: <Accessibility /> }
   ]}
 ])
 

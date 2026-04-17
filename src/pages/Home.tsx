@@ -14,7 +14,7 @@ function Home() {
         {/* Imagen fondo — solo mobile y tablet */}
         <img
           src="/GlitchMomH.png"
-          alt="Glitch Mom"
+          alt=""
           className="block lg:hidden absolute inset-0 w-full h-full object-cover"
         />
         <div className="block lg:hidden absolute inset-0 bg-(--void) opacity-70" />
@@ -45,7 +45,7 @@ function Home() {
         <div className="hidden lg:flex lg:w-1/2 items-center justify-center p-8">
           <img
             src="/GlitchMomH.png"
-            alt="Glitch Mom"
+            alt="Portada del podcast Glitch Mom mostrando una madre programadora con su hija"
             className="w-full max-w-lg object-contain rounded-xl"
           />
         </div>
@@ -70,6 +70,7 @@ function Home() {
             <TiltedCard
               key={episode.id}
               coverImage={episode.coverImage ?? '/GlitchMomLogo.png'}
+              altText={`Portada del episodio: ${episode.title}`}
               captionText={episode.title}
               containerHeight="250px"
               imageHeight="250px"

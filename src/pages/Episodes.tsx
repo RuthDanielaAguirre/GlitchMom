@@ -29,6 +29,7 @@ function Episodes() {
   <TiltedCard
     key={episode.id}
     coverImage={episode.coverImage ?? '/GlitchMomLogo.png'}
+    altText={`Portada del episodio: ${episode.title}`}
     captionText={episode.title}
     onClick={() => playEpisode(episode)}
   />

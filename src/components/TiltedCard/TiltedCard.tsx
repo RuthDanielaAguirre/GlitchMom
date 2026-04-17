@@ -4,7 +4,7 @@ import type { TiltedCardProps } from '../../types/TiltedCard'
 
 function TiltedCard({
   coverImage,
-  altText = 'Tilted card image',
+  altText = '',
   captionText = '',
   containerHeight = '300px',
   containerWidth = '100%',

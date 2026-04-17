@@ -33,6 +33,14 @@ function Navbar() {
         >
           contacto
         </NavLink>
+        <NavLink
+          to="/accessibility"
+          className={({ isActive }) =>
+            `text-sm font-light tracking-wider no-underline transition-colors ${isActive ? 'text-(--terra)' : 'text-(--links)'}`
+          }
+        >
+          accesibilidad
+        </NavLink>
         <button onClick={toggle} className="btn-terciary text-xs px-4 py-2 rounded-md">
           {theme === 'dark' ? '[ luz ]' : '[ noche ]'}
         </button>
